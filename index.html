@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Preview Kabupaten Bogor</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
-     
-
-    <!-- Fontawesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,76 +19,88 @@
         <nav>
             <ul>
                 <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Tentang Kota</a></li>
+                <li><a href="#tourism">Spot Menarik</a></li>
+                <li><a href="#contact">Lokasi</a></li>
             </ul>
         </nav>
         <article id="hero" class="content">
             <section class="hero">
-                <h1>Halo Semua! Saya, <br> <span>Billy Ibrahim Jouaqin</span></h1>
-                <h2><span class="text">Game Enthusiast</span></h2>
-                <p>Mempelajari hal baru itu seru!</p>
+                <div class="hero-texts">
+                    <h1><span>Portofolio</span></h1>
+                    <h2><span class="text">Kelompok 4</span></h2>
+                </div>
+                
             </section>
         </article>
     </header>
 
     <main>
         <div id="content-container">
-            <article id="about">
-                <div class="about-info">
-                    <h2>Tentang Saya</h2><br>
-                    <p> My name is Billy Ibrahim Jouaqin. I have high interest in Game Development, currently I am a
-                        high school student at SMK Pariwisata Metland
-                        School as an IT student. In my school there's an organization called ITEC aka Information
-                        Technology
-                        Engineering Club and I am part of it. I have 2 years of experience about Web Development, Web
-                        Design, and 3D Design.</p>
-                </div>
-
-                <div class="about-skills">
-                    <i class="fa-brands fa-html5 icons"></i>
-                    <i class="fa-brands fa-css3-alt icons"></i>
-                    <i class="fa-brands fa-js icons"></i>
-                    <i class="fa-brands fa-unity icons"></i>
+            <article id="about" class="content">
+                <h2>Tentang Kami</h2>
+                <p>Informasi singkat tentang kelompok kami.</p>
+              
+                <!-- 2x2 Grid Container -->
+                <div class="about-grid">
+                  <div class="card">
+                    <h3>Billy Ibrahim Jouaqin</h3>
+                    <p>Hi! Saya Billy Ibrahim Jouaqin, seorang siswa jurusan IT atau PPLG dari SMK Pariwisata Metland School. Saya menyukai IT terutama dalam bidang sebagai Game Developer dan Web Developer karena menggunakan kreatifitas dan logika dalam prosesnya. Saya juga gemar untuk mengeksplor dunia 3D lebih lanjut menggunakan software yang tersedia.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Valentino Setiawan</h3>
+                    <p>Saya adalah Valentino Setiawan, sebuah siswa dari SMK Metland School dan saya menjalani Program Kejuruan PPLG/IT sebab potensi besarnya dalampenggunaan dalam kehidupan sehari-hari serta semakin tumbuh kebutuhannya dalam semua aspek kehidupan.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="card">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
                 </div>
             </article>
 
-            <article id="portofolio" class="content">
+            <article id="tourism" class="content">
                 <section class="slider">
                     <div class="list">
                         <div class="item active">
-                            <img src="assets/img/gameproject(1).png">
-                            <div class="porto-content">
+                            <img src="../HTMLportofolio/assets/img/PortoBilly.png" alt="3D Model Smarthome Billy">
+                            <div class="content">
                                 <p>portofolio</p>
-                                <h2>Informatics Project</h2>
-                                <p> This is an individual project from Informatics subject that I chose to create a
-                                    simple game using Construct 2. It has a simple game mechanic and the objective is
-                                    only to go into next stage by doing some parkours.
+                                <h2>3D Smarthome</h2>
+                                <p> Ini adalah 3D dari proyek miniatur Smarthome. Dibuat menggunakan Blender dengan waktu 2 hari menyesuaikan barang yang digunakan dalam proyek miniatur.
                                 </p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/gameproject(2).png">
-                            <div class="porto-content">
+                            <img src="../HTMLportofolio/assets/img/PortoValen.jpg" alt="Website Valentino">
+                            <div class="content">
                                 <p>portofolio</p>
-                                <h2>Prototype Game</h2>
+                                <h2>Curug Cipamingkis</h2>
                                 <p>
-                                    This is a game project from organization made using Unity. I was the game designer
-                                    and project manager, it has a simple game mechanic and the objective is to get into
-                                    finish line. This game still under development.
+                                    Tempat rekreasi di bogor, Cocok untuk berlibur bersama. Curug Cipamingkis memiliki beragam Fasilitas yang tersedia seperti Penginapan, Camping Ground, Spot Selfie, Kolam Renang, dan lain sebagainya
                                 </p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/webproject(1).png">
-                            <div class="porto-content">
+                            <img src="assets/img/CurugCibaliung.jpg" alt="Curug Cibaliung">
+                            <div class="content">
                                 <p>portofolio</p>
-                                <h2>Feast & Flavour</h2>
+                                <h2>Curug Cibaliung</h2>
                                 <p>
-                                    This is a group web project from web development subject. This website is a simple
-                                    commercial product web, I worked as the project lead and as the front-end dev.
-
+                                    Curug Cibaliung menawarkan keindahan alam yang masih alami dan terjaga. Di sini, Anda bisa menikmati suara gemericik air yang jernih dan segar, sejuknya udara pegunungan, serta keindahan hutan yang rimbun dan asri
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/CurugCibaliung.jpg" alt="Curug Cibaliung">
+                            <div class="content">
+                                <p>portofolio</p>
+                                <h2>Curug Cibaliung</h2>
+                                <p>
+                                    Curug Cibaliung menawarkan keindahan alam yang masih alami dan terjaga. Di sini, Anda bisa menikmati suara gemericik air yang jernih dan segar, sejuknya udara pegunungan, serta keindahan hutan yang rimbun dan asri
                                 </p>
                             </div>
                         </div>
@@ -105,82 +111,49 @@
                     </div>
                     <div class="thumbnail">
                         <div class="item active">
-                            <img src="assets/img/gameproject(1).png" id="first-thumbnail">
+                            <img src="../HTMLportofolio/assets/img/PortoBilly.png" id="first-thumbnail" alt="3D Model Smarthome Billy">
                         </div>
                         <div class="item">
-                            <img src="assets/img/gameproject(2).png">
+                            <img src="../HTMLportofolio/assets/img/PortoValen.jpg" alt="Website Valentino">
                         </div>
                         <div class="item">
-                            <img src="assets/img/webproject(1).png">
+                            <img src="assets/img/CurugCibaliung.jpg" alt="Curug Cibaliung">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/CurugCibaliung.jpg" alt="Curug Cibaliung">
                         </div>
                     </div>
                 </section>
             </article>
 
             <article id="contact" class="content">
-                <h2>Contact</h2>
-                <div class="contact-container">
-                    <section class="mail">
-                        <h3>Contact Me</h3>
-                        <form action="" class="mail-form">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
-                            <label for="message">Messgae</label>
-                            <textarea name="message"  placeholder="Your Message" class="contact-input" required></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </section>
-                    <div class="contact-info">
-                        <section class="location">
-                            <i class="fa-solid fa-location-dot fa-2x"></i>
-                            <div class="location-content">
-                                <h3>Location</h3>
-                                <p>Indonesia</p>
-                                <p>Jawa Barat</p>
-                                <p>Kabupaten Bogor</p>
-                            </div>
-                        </section>
-                        <section class="social-media">
-                            <h3>Connect with Me</h3>
-                            <div class="socmed-list">
-                                <a href="https://www.youtube.com/@BillyEntertainmentDistrict"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                                <a href="https://www.instagram.com/imjustbill__"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                                <a href="https://github.com/ImJustB1ll"><i class="fa-brands fa-github fa-xl"></i></a>
-                                <a href="mailto:jouaqinbillyibrahim@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope fa-xl"></i></a>
-                            </div>
-                        </section>
-                    <div>
+                <div class="contact first">
+                    <h1>1</h1>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+                <div class="contact second">
+                    <h1>2</h1>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <div class="contact third">
+                    <h1>3</h1>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+                <div class="contact fourth">
+                    <h1>4</h1>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                </div>
                 </div>
             </article>
         </div>
-
-        <aside>
-            <div class="stats">
-              <div class="stats-info">
-                <img src="./assets/img/KaorukoWaguri.jpeg" alt="Favorite Char">
-                <h2>Billy Ibrahim Jouaqin</h2>
-                <table>
-                    <tr>
-                        <th colspan="2">Stats</th>
-                    </tr>
-                    <tr>
-                        <td class="td-info">Nick: </td>
-                        <td class="td-data">Bill</td>
-                    </tr>
-                    <tr>
-                        <td class="td-info">Level: </td>
-                        <td class="td-data">16</td>
-                    </tr>
-                    <tr>
-                        <td class="td-info">Interest:</td>
-                        <td class="td-data">Game</td>
-                    </tr>
-                </table>
-              </div>
-            </div>
-        </aside>
     </main>
 
     <footer>
@@ -189,7 +162,6 @@
     </footer>
 
     <script src="assets/scripts/slider.js"></script>
-    <script src="assets/scripts/typewriter.js"></script>
 </body>
 
 </html>
