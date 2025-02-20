@@ -95,7 +95,7 @@ article {
     width: fit-content;
     padding: 8rem;
     background: rgba(53,76,88, 0.75);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba( 53,76,88, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -158,9 +158,9 @@ article {
     margin-bottom: 1rem;
   }
   
-/* Tourism Section */
+/* portofolio Section */
 
-#tourism {
+#portofolio {
     padding: 0;
     color: #eee;
 }
@@ -216,9 +216,6 @@ article {
 .slider .list .item .content h2{
     margin: 0;
     font-size: 3rem;
-}
-.slider .list .item .content p:nth-child(3) {
-    font-size: 1.5rem;
 }
 .slider .list .item.active{
     opacity: 1;
@@ -306,7 +303,18 @@ article {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    height: 100dvh;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--fontColor);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact {
@@ -316,34 +324,57 @@ article {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    padding: 1rem;
-    box-sizing: border-box;      
+    padding: .6rem;
+    box-sizing: border-box;
+    height: 450px;
 }
 
 /* Headings and paragraph spacing inside each column */
 .contact h1 {
     margin-bottom: 0.5rem;
-}
-.contact p {
-    margin: 0.25rem 0;
+    text-align: center;
 }
 
 /* Individual background colors for each column */
+.contact .links a{
+    font-size: 2rem;
+    color: var(--fontColor);
+    margin: 1rem;
+}
+.contact .links a:hover{
+    color: var(--mainCol);
+}
 .first {
-    background-color: lightgray;
-    color: #000;
+    width: fit-content;
+    padding: 3rem;
+    background: rgba(53,76,88, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
 .second {
-    background-color: red;
-    color: #fff;
+    width: fit-content;
+    padding: 3rem;
+    background: rgba(88, 53, 53, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
 .third {
-    background-color: blue;
-    color: #fff;
+    width: fit-content;
+    padding: 3rem;
+    background: rgba(88, 86, 53, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
 .fourth {
-    background-color: yellow;
-    color: #000;
+    width: fit-content;
+    padding: 3rem;
+    background: rgba(88, 53, 88, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -368,82 +399,231 @@ footer a:hover {
 
 @media screen and (max-width: 1600px) {
     article {
-        font-size: 1.4rem;
+      font-size: 1.4rem;
     }
-
-    .thumbnail .item{
-        width: 220px;
-        height: 220px;
+    .thumbnail .item {
+      width: 220px;
+      height: 220px;
     }
-}
-
-@media screen and (max-width: 1400px) {
-    article {
+  }
+  
+  /* For screens up to 1400px (standard desktops) */
+  @media screen and (max-width: 1400px) {
+    html {
+        font-size: 90%;
+      }
+      
+      /* Adjust Navbar */
+      nav a {
+        font-size: 16px;
+      }
+      
+      /* Adjust article text sizes */
+      article {
         font-size: 1.2rem;
-    }
-
-    .thumbnail .item{
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    article {
-        font-size: 1rem;
-    }
-    main {
-        flex-flow: column nowrap;
-    }
-    main aside {
-        align-self: stretch;
-    }
-    aside {
+      }
+      
+      /* Center the hero content vertically */
+      .hero {
         padding-top: 0;
-    }
-    #about{
-        padding-inline: 0;
-    }
-    .content{
-        padding-inline: 0;
-        padding-block: 0;
-    }
-    #location.content{
-        padding-block: 8rem 4.5rem;
-    }
-    .thumbnail .item{
-        width: 120px;
-        height: 120px;
-    }
-    .stats {
-        position: static;
-    }
-    .stats-info {
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    nav ul {
-        gap: 2rem;
-    }
-    nav a {
-        font-size: 14px;
-    }
-    .hero h1 span {
-        font-size: 2rem;
-    }
-    #tourism.content h2 {
-        font-size: 2rem;
-    }
-    #tourism.content p {
-        font-size: 1rem;
-    }
-    article {
-        font-size: .9rem;
-    }
-    .thumbnail .item{
+      }
+      
+      /* Adjust hero-texts if needed */
+      .hero-texts {
+        padding: 6rem; /* You can tweak this value to your liking */
+      }
+      
+      /* Fine-tune slider content */
+      .slider .list .item .content {
+        max-width: 90%;
+        padding: 3rem 1rem;
+      }
+      
+      /* Adjust thumbnails */
+      .thumbnail .item {
         width: 100px;
         height: 100px;
+      }
+      .contact {
+        height: 200px;
+        font-size: 1rem;
     }
-}
+  }
+  
+  /* For screens up to 1200px (medium devices / tablets in landscape) */
+  @media screen and (max-width: 1200px) {
+    article {
+      font-size: 1.2rem;
+    }
+    main {
+      flex-direction: column;
+    }
+    #about,
+    .content {
+      padding-inline: 2rem;
+      padding-block: 4rem;
+    }
+    nav ul {
+        gap: 2rem;
+        padding: 1.4rem;
+    }
+    /* Reduce slider content width and padding */
+    .slider .list .item .content {
+      left: 5%;
+      width: auto;
+      max-width: 90%;
+      padding: 4rem 1rem;
+    }
+    .thumbnail .item {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
+  /* For screens up to 992px (tablets landscape) */
+  @media screen and (max-width: 992px) {
+    article {
+      font-size: 1.1rem;
+    }
+    /* Adjust hero section for smaller screens */
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero-texts {
+      padding: 4rem;
+    }
+    /* Switch the About grid to a single-column layout */
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    nav ul {
+        gap: 2rem;
+        padding: 1.3rem;
+    }
+    /* Make navigation links slightly smaller */
+    nav a {
+      font-size: 16px;
+    }
+    .slider .list .item .content {
+        left: 5%;
+        width: auto;      /* Let it adapt to its content */
+        max-width: 90%;   /* Limit the maximum width to avoid overflow */
+        padding: 2rem 1rem;
+    }
+    .thumbnail .item {
+        width: 150px;
+        height: 150px;
+      }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      /* Adjust each contact block to be full-width (or nearly full-width) */
+      .contact {
+        width: 90%;       /* Instead of 'fit-content', use a percentage */
+        padding: 1.5rem;  /* Reduce padding for smaller screens */
+        height: auto;     /* Remove fixed height to allow flexible content */
+        margin: 0 auto;
+      }
+      
+      /* Optionally, adjust the inner content if necessary */
+      .contact .links a {
+        font-size: 2rem;  /* Optionally reduce icon sizes if needed */
+      }
+  }
+  
+  /* For screens up to 768px (tablets portrait) */
+  @media screen and (max-width: 768px) {
+    article {
+      font-size: 1rem;
+    }
+    nav ul {
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      font-size: 12px;
+    }
+    /* Adjust hero text size */
+    .hero h1 span {
+      font-size: 2rem;
+    }
+    .hero-texts {
+      padding: 3rem;
+    }
+    .slider .list .item .content {
+        left: 5%;
+        width: auto;      /* Let it adapt to its content */
+        max-width: 90%;   /* Limit the maximum width to avoid overflow */
+        padding: 2rem 1rem;
+    }
+    /* Reduce thumbnail sizes further */
+    .thumbnail .item {
+      width: 150px;
+      height: 150px;
+    }
+    /* Adjust the Contact section layout: allow items to wrap */
+    .contact-container {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .contact {
+      width: 100%; /* Alternatively, use 50% for two columns if desired */
+      margin: 1rem 0;
+      height: auto;
+    }
+  }
+  
+  /* For screens up to 576px (mobiles) */
+  @media screen and (max-width: 576px) {
+    /* Adjust slider height for mobile */
+    .slider {
+        height: 100dvh; /* Reduce height from 120dvh to 80dvh */
+    }
+  
+    /* Adjust slider content box for mobile */
+    .slider .list .item .content {
+        left: 5%;
+        width: auto;      /* Let it adapt to its content */
+        max-width: 90%;   /* Limit the maximum width to avoid overflow */
+        padding: 2rem 1rem;
+    }
+  
+    /* Optionally, reduce font sizes inside the slider content */
+    .slider .list .item .content h2 {
+        font-size: 1.6rem;  /* Adjust heading size */
+    }
+    .slider .list .item .content p {
+        font-size: .8rem;  /* Adjust paragraph size */
+    }
+  
+    /* Adjust thumbnails if needed */
+    .thumbnail .item {
+        width: 60px;     /* Further reduce thumbnail sizes */
+        height: 100px;
+    }
+
+    .contact {
+        height: 200px;
+        font-size: 1rem;
+    }
+
+    .contact h1 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    /* Individual background colors for each column */
+    .contact .links a{
+        font-size: 1.1rem;
+        margin: .1rem;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+  }
