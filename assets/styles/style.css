@@ -209,6 +209,12 @@ article {
     flex-direction: column;
     justify-content: center;
 }
+.slider .list .item .content a {
+  color: var(--fontColor);
+}
+.slider .list .item .content a:hover {
+  color: var(--mainCol);
+}
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
